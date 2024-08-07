@@ -1,0 +1,342 @@
+html {
+  font-size: 100%;
+}
+
+body{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  color: #333;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+
+.header-logo {
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 40px;
+  vertical-align: bottom;
+}
+
+.humbreger {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+
+.humbreger > span > hr {
+  width: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.fv-content {
+  position: relative;
+}
+
+.fv-text > p {
+font-size:	2.875rem ;
+font-weight: bold;
+text-shadow: 1px 1px 8px #fff;
+margin-bottom: 10px;
+
+}
+
+.fv-text > a {
+  font-size:	1.5rem ;
+  text-decoration: none;
+  color: #fff;
+  background-color: red;
+  display: block;
+  padding: 10px 40px;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: solid brown 5px;
+  position: relative;
+  margin-top: 20px;
+  transition: all 500ms;
+  }
+
+.fv-text > a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+  .fv-text > a::after {
+    content: '＞';
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    }
+
+.fv-text {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  z-index: 11;
+}
+
+
+.fv-img {
+ width: 1040px;
+ /*  */
+  height: 720px;
+  margin: 0 0 0 auto; 
+  position: relative;
+  z-index: 10;
+  
+}
+
+
+.fv-img::after {
+  position: absolute;
+	content: '';
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: inset 0 0 20px 50px #FFF; 
+}
+
+.fv-img > div {
+width: 1040px;
+
+} 
+
+.fv1,.fv2,.fv3 {
+  /*  */
+  max-width: 1040px;
+  /*  */
+   height: 720px;
+  /* width: 100%; */
+  display: none;
+} 
+
+.content-title {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.content-line {
+  width: 100px;
+  margin: 0 auto 80px auto;
+  height:3px ;
+  background-color: #000;
+}
+
+.bg-red {
+  background-color: red;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*  */
+  overflow: hidden;
+  
+}
+
+.left,.right{
+background-color: #fff;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 70px 0;
+}
+
+.left {
+  margin-bottom: 20px;
+  border-radius:0 10px 10px 0 ;
+  transform: translateX(-50vw);
+  opacity: 0;
+  /*  */
+  transition: 1s;
+ 
+}
+
+.right {
+  border-radius: 10px 0 0 10px;
+  margin: 0 0 0 auto;
+ transform: translateX(100vw); 
+ opacity: 0;
+   /*  */
+   transition:all 1s;
+
+}
+
+.show{
+	transform: translateX(0);
+  opacity: 1;
+}
+
+
+.left-img {
+ width: 90px;
+}
+
+.left-img img {
+ width: 100%;
+}
+
+.right-img {
+  width: 50px;
+ }
+ 
+ .right-img img {
+  width: 100%;
+ }
+ .text-red {
+  color: red;
+  font-size: 1.75rem;
+  font-weight: bold;
+ }
+
+ .reason-text {
+  margin-left:20px ;
+ }
+
+ .reason-text p:nth-child(2) {
+  font-size: 1.125rem;
+ }
+
+ .voice-bg {
+  width: 120px;
+  height: 120px;
+  background-color: gray;
+  border-radius: 50%;
+ }
+
+ .voice-content > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ #voice {
+  max-width: 860px;
+  margin: 0 auto;
+ }
+
+.sutudent p {
+  text-align: center;
+}
+
+.voice-text-left,.voice-text-right {
+  background-color: #E9F1FB;
+  padding: 25px;
+  border-radius: 8px;
+  max-width:520px ;
+  position: relative;
+
+}
+
+.voice-text-left::before {
+  content: '';
+  position: absolute;
+  border:10px #E9F1FB solid;
+  width: 3px;
+  height: 3px;
+  left:-5px;
+  top: 60px;
+  transform: rotate(45deg);
+
+}
+
+.voice-text-right::after {
+  content: '';
+  position: absolute;
+  border:10px #E9F1FB solid;
+  width: 3px;
+  height: 3px;
+  right:-5px;
+  top: 60px;
+  transform: rotate(45deg);
+ 
+}
+
+
+
+
+
+
+
+
+
+.sutudentLeft {
+transform:translateX(-8%);
+opacity: 0;
+margin-bottom: 80px;
+}
+
+.sutudentRight {
+  transform: translateX(8%);
+  opacity: 0;
+  margin-bottom: 80px;
+}
+
+
+.opacity {
+  animation: opacity 800ms forwards;
+}
+
+@keyframes  opacity {
+  0%{
+    opacity: 0;
+    transform: scale(0.1);
+    /* なぜこれがあるとフェードインになる？ */
+    /* transform:translateX(-8%); */
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+    transform:translateX(-8%);
+  }
+}
+
+.opactiyright {
+  animation: opacityright 800ms forwards;
+}
+
+@keyframes  opacityright {
+  0%{
+    opacity: 0;
+    transform: scale(0.1);
+    /* なぜこれがあるとフェードインになる？ */
+    /* transform:translateX(8%); */
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+    transform:translateX(8%);
+  }
+}
+
+
+.sutudentLeft > .sutudent{
+  margin-right:20px ;
+  }
+  
+  .sutudentRight > .sutudent {
+    margin-left:20px ;
+  }
+
+
+#school {
+  background-image: url('../img/bg.gif');
+}
+
+  .schoolcontent {
+    background-color: #fff;
+  }
