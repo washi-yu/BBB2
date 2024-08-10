@@ -267,13 +267,6 @@ padding: 70px 0;
 }
 
 
-
-
-
-
-
-
-
 .sutudentLeft {
 transform:translateX(-8%);
 opacity: 0;
@@ -323,6 +316,21 @@ margin-bottom: 80px;
   }
 }
 
+#school {
+  background-image: url(../img/bg.gif);
+  padding:60px 0 60px 0 ;
+  animation: active 8s linear infinite;
+}
+
+@keyframes active {
+  0%{
+   background-position: 0 0;
+  }
+  100%{
+    background-position:-700px 700px ;
+  }
+}
+
 
 .sutudentLeft > .sutudent{
   margin-right:20px ;
@@ -333,10 +341,114 @@ margin-bottom: 80px;
   }
 
 
-#school {
-  background-image: url('../img/bg.gif');
-}
-
   .schoolcontent {
     background-color: #fff;
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+   
+ 
+  
+  }
+
+.schoolcontent > div  {
+  text-align: center;
+  padding: 0 70px;
+}
+
+
+.schoolcontent h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+
+}
+
+.schoolcontent h2 {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+  .flex {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+#hover > .content-title {
+  margin-bottom: 10px;
+}
+
+  #hover p {
+    text-align: center;
+  }
+
+  .hover {
+    margin: 40px auto 120px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    /* text-align: center; */
+    width:860px ;
+    height: 66px;
+    color:#fff;
+    background-color:red;
+    border-radius: 35px;
+
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: 300ms ;
+  
+  }
+
+
+.hover:hover {
+border: 5px solid red;
+background-color: #fff;
+color: red;
+  }
+
+
+  footer {
+    background-color: #E8E8E8;
+    padding: 60px 0 30px 0;
+  }
+
+  footer a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    margin-left: 1rem;
+    line-height: 2;
+    transition: 500ms;
+  }
+
+  footer > div {
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+
+  footer p {
+    font-weight: bold;
+    line-height: 2;
+  }
+  
+  footer span {
+    display: block;
+    text-align: center;
+  }
+
+  footer a:hover {
+  opacity: 0.7;
   }
